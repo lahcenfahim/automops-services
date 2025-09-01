@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://automops-services.fr/sitemap.xml
