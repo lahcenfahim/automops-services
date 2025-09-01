@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SASU Automops-services</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
 
   <!-- Header -->
   <header class="bg-blue-600 text-white py-6 shadow-lg">
     <div class="max-w-5xl mx-auto px-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">SASU DevOps & Cloud</h1>
+      <h1 class="text-2xl font-bold">DevSecOps & Cloud</h1>
       <nav>
         <a href="#services" class="px-3 hover:underline">Services</a>
         <a href="#about" class="px-3 hover:underline">À propos</a>
@@ -23,40 +23,81 @@
   <!-- Hero Section -->
   <section class="max-w-5xl mx-auto px-4 py-16 text-center">
     <h2 class="text-4xl font-bold mb-4">Automatisez vos processus, optimisez vos infrastructures Cloud & DevOps</h2>
-    <p class="text-lg mb-6">Nous accompagnons nos clients dans leur transformation digitale grâce à des solutions Cloud et DevOps fiables, sécurisées et scalables.</p>
-    <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">Travaillons ensemble</a>
+    <p class="text-lg mb-6 max-w-3xl mx-auto">
+      Transformez votre entreprise avec des solutions DevSecOps & Cloud fiables, sécurisées et scalables — délivrées par une équipe d’experts dédiée à votre succès.
+    </p>
+    <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-lg shadow-lg hover:bg-blue-700 transition">
+      Demandez une consultation gratuite
+    </a>
   </section>
 
   <!-- Services -->
   <section id="services" class="bg-white py-16">
-    <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center">
-      <div class="p-6 bg-gray-100 rounded-xl shadow">
+    <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-5 gap-8 text-center">
+      <!-- CI/CD -->
+      <div class="p-6 bg-gray-100 rounded-xl shadow flex flex-col items-center">
+        <svg class="w-12 h-12 mb-3 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
         <h3 class="text-xl font-semibold mb-2">CI/CD</h3>
-        <p>Mise en place de pipelines d'intégration et déploiement continus.</p>
+        <p>Mise en place de pipelines d'intégration et déploiement continus pour accélérer vos livraisons.</p>
       </div>
-      <div class="p-6 bg-gray-100 rounded-xl shadow">
+
+      <!-- IaC -->
+      <div class="p-6 bg-gray-100 rounded-xl shadow flex flex-col items-center">
+        <svg class="w-12 h-12 mb-3 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+        </svg>
+        <h3 class="text-xl font-semibold mb-2">Infrastructure as Code (IaC)</h3>
+        <p>Automatisation et gestion de votre infrastructure pour plus de fiabilité et de rapidité.</p>
+      </div>
+
+      <!-- Conteneurisation -->
+      <div class="p-6 bg-gray-100 rounded-xl shadow flex flex-col items-center">
+        <svg class="w-12 h-12 mb-3 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 12h20" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 2v20" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3 class="text-xl font-semibold mb-2">Conteneurisation</h3>
+        <p>Packaging léger des applications avec Docker et orchestration avec Kubernetes.</p>
+      </div>
+
+      <!-- Observabilité -->
+      <div class="p-6 bg-gray-100 rounded-xl shadow flex flex-col items-center">
+        <svg class="w-12 h-12 mb-3 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 12h3m4 0h4m4 0h3M12 3v3m0 4v4m0 4v3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3 class="text-xl font-semibold mb-2">Observabilité</h3>
+        <p>Supervision avancée avec des outils de dashboarding et logs centralisés.</p>
+      </div>
+
+      <!-- Cloud -->
+      <div class="p-6 bg-gray-100 rounded-xl shadow flex flex-col items-center">
+        <svg class="w-12 h-12 mb-3 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 17.58A5.42 5.42 0 0114.58 23 5.42 5.42 0 0110 19.41a5.42 5.42 0 015.41-5.41H18a3 3 0 002-5.27" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5 16a4 4 0 01.88-7.88A4.64 4.64 0 0111 7a5.41 5.41 0 013 9.75" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
         <h3 class="text-xl font-semibold mb-2">Cloud</h3>
-        <p>Architecture et gestion sur AWS, Azure, GCP.</p>
-      </div>
-      <div class="p-6 bg-gray-100 rounded-xl shadow">
-        <h3 class="text-xl font-semibold mb-2">Monitoring & Sécurité</h3>
-        <p>Surveillance proactive et renforcement de la sécurité.</p>
+        <p>Déploiement optimisé et gestion multi-cloud sur AWS, Azure et GCP.</p>
       </div>
     </div>
   </section>
 
   <!-- About -->
   <section id="about" class="max-w-4xl mx-auto px-4 py-16 text-center">
-    <h2 class="text-3xl font-bold mb-4">À propos</h2>
-    <p>Notre SASU est spécialisée dans le DevOps et le Cloud. Nous aidons les entreprises à automatiser leurs processus, optimiser leurs coûts et sécuriser leurs environnements.</p>
+    <h2 class="text-3xl font-bold mb-6">À propos</h2>
+    <p class="mb-6">
+      Avec plus de 10 ans d'expérience dans le DevSecOps et le Cloud, nous aidons les entreprises à automatiser leurs processus, optimiser leurs coûts et sécuriser leurs environnements.
+    </p>
   </section>
 
   <!-- Contact -->
   <section id="contact" class="bg-blue-600 text-white py-16">
     <div class="max-w-3xl mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold mb-4">Contactez-nous</h2>
-      <p class="mb-6">Parlons de vos projets DevOps & Cloud.</p>
-      <a href="mailto:contact@automops-services.com" class="bg-white text-blue-600 px-6 py-3 rounded-lg shadow hover:bg-gray-100">
+      <p class="mb-6">Parlons de vos projets DevSecOps & Cloud.</p>
+      <a href="mailto:contact@automops-services.com" class="bg-white text-blue-600 px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">
         contact@automops-services.fr
       </a>
     </div>
